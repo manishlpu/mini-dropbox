@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  text-transform: capitalize;
+  font-weight: 450;
+  font-style: italic;
+  font-size: 1.25rem;
+
+  padding: 0 1rem;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-item {
+  list-style: none;
+  padding: 0.5rem 1rem;
+}
+.navbar-item:hover {
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.navbar-item-link {
+  color: cadetblue;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+.heading {
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.upload-btn {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px 0;
+  min-width: 100px;
+
+  margin-top: 1.25rem;
+}
+
+.file-icon {
+  max-width: min(50%, 100px);
+}
+.file-name {
+  text-align: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  justify-items: center;
+  align-items: center;
+}
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+.file-view {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+.left {
+  min-width: 32%;
+}
+.right {
+  max-width: 66%;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: flex-start;
+}
+
+.title {
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  text-align: left;
+  padding: 0.5rem;
+}
+.data {
+
+}
+.btn {
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: cadetblue;
+  margin-top: 1rem;
+
+  border-radius: 10% 0;
+}
+.download {
+  align-self: center;
+  width: min(50%, 125px);
+}
+.btn-link {
+  text-decoration: none;
+}
+
+.adjacent-btns {
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+}
+.file-view-btn {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+.upload-form {
+  text-align: center;
+}
+.form-fields-left {
+  width: 34%;
+  display: inline-block;
+  padding-right: 2rem;
+
+  text-align: end;
+  font-weight: bold;
+  font-style: italic;
+}
+.form-fields-right {
+  width: 50%;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+}
